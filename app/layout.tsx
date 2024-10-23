@@ -6,9 +6,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Quiz App - For GIAIC Students",
+  title: "Quiz App - For LUMHS Students",
   description:
-    "A quiz app for GIAIC students to test their Knowledge (onsite) about what they learn (The Topics) in the Class.",
+ "A quiz app for LUMHS students to practice for their papers and test their knowledge in preparation for exams."
 };
 
 export default function RootLayout({

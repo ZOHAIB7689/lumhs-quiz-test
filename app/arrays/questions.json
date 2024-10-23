@@ -1,82 +1,82 @@
 [
   {
-    "question": "How do you declare an empty array in JavaScript?",
-    "a": "let myArray = [];",
-    "b": "let myArray = {};",
-    "c": "let myArray = '';",
-    "d": "let myArray = null;",
-    "correct": "a"
-  },
-  {
-    "question": "Which of the following is a valid way to access the first element of an array?",
-    "a": "array.first",
-    "b": "array(0)",
-    "c": "array[0]",
-    "d": "array.getFirst()",
+    "question": "Which of the following is the most basic type of lipid?",
+    "a": "Compound lipid",
+    "b": "Derived lipid",
+    "c": "Simple lipid",
+    "d": "Phospholipids",
     "correct": "c"
   },
   {
-    "question": "Which statement correctly returns the number of elements in an array named 'data'?",
-    "a": "data.size",
-    "b": "data.count()",
-    "c": "data.length",
-    "d": "data.capacity",
-    "correct": "c"
-  },
-  {
-    "question": "Which method allows you to add new elements to the end of an array?",
-    "a": "shift",
-    "b": "unshift",
-    "c": "push",
-    "d": "pop",
-    "correct": "c"
-  },
-  {
-    "question": "What is the index of the last element in an array 'items' that contains 5 elements?",
-    "a": "0",
-    "b": "4",
-    "c": "5",
-    "d": "6",
+    "question": "What is the chemical process called that converts fats into soap?",
+    "a": "Hydrogenation",
+    "b": "Saponification",
+    "c": "Emulsification",
+    "d": "Rancidity",
     "correct": "b"
   },
   {
-    "question": "Which array method creates a new array by filtering elements that meet a specified condition?",
-    "a": "filter",
-    "b": "forEach",
-    "c": "reduce",
-    "d": "map",
-    "correct": "a"
+    "question": "What is the main difference between saturated and unsaturated fats?",
+    "a": "Saturated fats contain no double bonds, while unsaturated fats contain one or more.",
+    "b": "Saturated fats have higher melting points than unsaturated fats.",
+    "c": "Unsaturated fats go rancid more easily than saturated fats.",
+    "d": "All of the above",
+    "correct": "d"
   },
   {
-    "question": "Which method is used to combine all elements of an array into a single string?",
-    "a": "join",
-    "b": "slice",
-    "c": "concat",
-    "d": "splice",
-    "correct": "a"
+    "question": "Which of the following is a function of lipids in the human body?",
+    "a": "Insulation",
+    "b": "Source of energy",
+    "c": "Constituent of cell membranes",
+    "d": "All of the above",
+    "correct": "d"
   },
   {
-    "question": "Which method creates a new array by modifying each element in the original array?",
-    "a": "reduce",
-    "b": "filter",
-    "c": "map",
-    "d": "concat",
+    "question": "Which compound is the precursor for bile acids and steroid hormones?",
+    "a": "Phospholipids",
+    "b": "Triglycerides",
+    "c": "Cholesterol",
+    "d": "Glycolipids",
     "correct": "c"
   },
   {
-    "question": "What method removes the last element from an array and returns it?",
-    "a": "shift",
-    "b": "pop",
-    "c": "slice",
-    "d": "unshift",
+    "question": "What is the role of phospholipids in the body?",
+    "a": "Forming the cell membrane structure",
+    "b": "Producing energy",
+    "c": "Storing fat",
+    "d": "Transporting proteins",
+    "correct": "a"
+  },
+  {
+    "question": "Which type of lipid is derived from the hydrolysis of simple and compound lipids?",
+    "a": "Simple lipids",
+    "b": "Derived lipids",
+    "c": "Compound lipids",
+    "d": "Triglycerides",
     "correct": "b"
   },
   {
-    "question": "Which array method returns the index of the first occurrence of a specified element, or -1 if it isn't found?",
-    "a": "findIndex",
-    "b": "indexOf",
-    "c": "includes",
-    "d": "find",
+    "question": "Which type of fat is considered healthier for the heart and helps reduce cholesterol levels?",
+    "a": "Saturated fats",
+    "b": "Trans fats",
+    "c": "Unsaturated fats",
+    "d": "Hydrogenated fats",
+    "correct": "c"
+  },
+  {
+    "question": "What is the main function of triglycerides in the human body?",
+    "a": "Cell membrane formation",
+    "b": "Energy storage",
+    "c": "Protein synthesis",
+    "d": "Hormone production",
     "correct": "b"
+  },
+  {
+    "question": "Which lipid disorder is associated with a high level of low-density lipoprotein (LDL) in the blood?",
+    "a": "Atherosclerosis",
+    "b": "Hypertension",
+    "c": "Diabetes",
+    "d": "Osteoporosis",
+    "correct": "a"
   }
 ]

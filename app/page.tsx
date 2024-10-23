@@ -25,7 +25,7 @@ export default function Component() {
       <header className="flex h-14 items-center justify-between px-4 lg:px-6">
         <Link
           className="flex items-center justify-center"
-          href="https://github.com/AsharibAli/"
+          href="https://github.com/zohaib7689"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,10 +41,11 @@ export default function Component() {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem>
-              <Link href="/oop">TS OOP Quiz</Link>
+              <Link href="/arrays">Quiz number 1</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/asynchronous2">Asynchronous (2) Quiz</Link>
+              <Link href="/#">Further Test will come soon</Link>
+            {/* 
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link href="/asynchronous">Asynchronous Quiz</Link>
@@ -71,8 +72,8 @@ export default function Component() {
               <Link href="/react-3">React Three Quiz</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/react-4">React Four Quiz</Link>
-            </DropdownMenuItem>
+              <Link href="/react-4">React Four Quiz</Link>*/}
+            </DropdownMenuItem> 
           </DropdownMenuContent>
         </DropdownMenu>
       </header>
@@ -82,9 +83,8 @@ export default function Component() {
             Take the Quiz
           </h1>
           <p className="max-w-[600px] text-gray-400 md:text-xl">
-            A quiz app for (Monday 2-5) GIAIC students to test their Knowledge
-            (onsite) about what they learn (The Topics) in the Class.
-          </p>
+          A quiz app for LUMHS papers practice to test their knowledge based on previous exam papers and relevant topics.
+</p>
         </div>
 
         <AlertDialog>
@@ -94,22 +94,16 @@ export default function Component() {
           <AlertDialogContent>
             <AlertDialogHeader>
               <AlertDialogTitle>
-                ➡️ Teacher & Student Ambassabdor{" "}
-                <a href="https://github.com/AsharibAli/" target="_blank">
-                  <strong>Asharib Ali</strong>
+                ➡️ Your loved one {" "}
+                <a href="/#" target="_blank">
+                  <strong>Shahzad</strong>
                 </a>{" "}
                 ❤️
               </AlertDialogTitle>
               <AlertDialogDescription>
-                During my (Monday 2-5) GIAC onsite class, I noticed we lack
-                activities for students to apply and test their programming
-                knowledge effectively. Given the logistical challenge of
-                engaging over 1500 students, I have created a quiz application.
-                This app allows for direct participation of students through
-                multiple quizzes based on class topics we teach, It also help us
-                to see who is perfoming well and have interest in learning in
-                our on-class.
-              </AlertDialogDescription>
+             
+During my LUMHS classes, I noticed a lack of resources for students to effectively practice and test their knowledge. Given the challenge of engaging a large number of students, I have created a quiz application. This app allows students to participate in multiple quizzes based on past exam papers and relevant topics, helping us identify who is performing well and showing interest in learning.
+ </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
@@ -125,11 +119,11 @@ export default function Component() {
         <div className="flex gap-4 sm:ml-auto sm:gap-6">
           <Link
             className="text-xs text-white underline-offset-4 hover:underline"
-            href="https://github.com/AsharibAli/"
+            href="https://https://www.linkedin.com/in/zohaib-baloch-78974b2b5/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Build with ❤️ by Asharib Ali
+            Build with ❤️ Zohaib
           </Link>
         </div>
       </footer>

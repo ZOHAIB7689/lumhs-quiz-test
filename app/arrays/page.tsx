@@ -41,7 +41,6 @@ const QuizApp: React.FC = () => {
   const [userAnswers, setUserAnswers] = useState<{
     [key: number]: string | null;
   }>({});
-  const [questionAnswered, setQuestionAnswered] = useState(false);
 
   // Use this to get the screen dimensions dynamically
   const { width, height } = useWindowSize();
@@ -52,17 +51,10 @@ const QuizApp: React.FC = () => {
 
   const loadQuiz = () => {
     setSelectedAnswer(null);
-    setQuestionAnswered(false);
   };
 
   const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (questionAnswered) {
-      alert(
-        "You have already selected an answer. Please continue to the next question."
-      );
-    } else {
-      setSelectedAnswer(event.target.id);
-    }
+    setSelectedAnswer(event.target.id);
   };
 
   const getTimeTaken = () => {
@@ -73,11 +65,11 @@ const QuizApp: React.FC = () => {
   };
 
   const handleSubmit = () => {
-    // Ensure an answer is selected
-    if (selectedAnswer !== null) {
+    // Check if an answer is selected
+    if (selectedAnswer) {
       // Increment score if the answer is correct
       if (selectedAnswer === quizData[currentQuiz].correct) {
-        setScore(score + 1);
+        setScore((prevScore) => prevScore + (100 / quizData.length)); // Dynamic score calculation
       }
 
       // Save the user's answer
@@ -86,24 +78,22 @@ const QuizApp: React.FC = () => {
         [currentQuiz]: selectedAnswer,
       }));
 
-      // Mark the question as answered
-      setQuestionAnswered(true);
+      // Move to the next question if available
+      if (currentQuiz < quizData.length - 1) {
+        setCurrentQuiz(currentQuiz + 1);
+        loadQuiz();
+      } else {
+        // Finish the quiz and calculate the time taken
+        getTimeTaken();
+        setIsFinished(true);
 
-      // Display feedback for the current question
-      setTimeout(() => {
-        // Move to the next question if available
-        if (currentQuiz < quizData.length - 1) {
-          setCurrentQuiz(currentQuiz + 1);
-          loadQuiz();
-        } else {
-          // Finish the quiz and calculate the time taken
-          getTimeTaken();
-          setIsFinished(true);
+        // Trigger confetti if the score is 80% or above
+        if ((score / (quizData.length * 10)) * 100 >= 50) {
+          handleConfetti();
         }
-      }, 3000); // Wait 3 seconds before moving to the next question
+      }
     } else {
-      // Optionally, you can display an alert to prompt the user to select an answer
-      alert("Please select an answer before submitting.");
+      alert("Please select an answer before proceeding.");
     }
   };
 
@@ -116,15 +106,17 @@ const QuizApp: React.FC = () => {
       setShowConfetti(false);
     }, 30000);
   };
+
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-gradient-to-r from-[#b8c6db] to-[#f5f7fa] pt-16">
       {/* Show confetti only when the quiz is finished */}
       {showConfetti && <Confetti width={width} height={height} />}
 
       <header className="fixed top-0 z-50 w-full bg-gray-800 py-2 text-center text-white shadow-lg">
-        ➡️ Challenge Your JS Arrays Knowledge: Tackling{" "}
-        <strong> Question {currentQuiz + 1} </strong> of 10 🔥
+        Challenge Your Chemistry of Lipids Knowledge: Tackling
+        <strong> Question {currentQuiz + 1} </strong> of {quizData.length}
       </header>
+
       <div className="w-full max-w-md md:max-w-lg mx-4 overflow-auto rounded-lg bg-white shadow-2xl transform transition-all duration-300 hover:scale-105">
         {!isFinished ? (
           <div className="quiz-header p-6 md:p-16">
@@ -140,7 +132,6 @@ const QuizApp: React.FC = () => {
                     name="answer"
                     className="mr-2 cursor-pointer"
                     checked={selectedAnswer === key}
-                    disabled={questionAnswered}
                     onChange={handleAnswerChange}
                   />
                   <label htmlFor={key} className="cursor-pointer">
@@ -150,23 +141,6 @@ const QuizApp: React.FC = () => {
               ))}
             </ul>
 
-            {selectedAnswer && questionAnswered && (
-              <div className="mt-4 md:mt-8 text-center">
-                {selectedAnswer === quizData[currentQuiz].correct ? (
-                  <p className="text-green-500">Correct!</p>
-                ) : (
-                  <p className="text-red-500">
-                    Incorrect! The correct answer is{" "}
-                    {
-                      quizData[currentQuiz][
-                        quizData[currentQuiz].correct as keyof QuizData
-                      ]
-                    }
-                    .
-                  </p>
-                )}
-              </div>
-            )}
             <div className="mt-4 md:mt-8 flex justify-center">
               <Button
                 className="inline-flex h-8 md:h-10 items-center justify-center rounded-md bg-black px-6 md:px-8 text-lg font-bold text-white shadow transition-colors hover:bg-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
@@ -179,12 +153,10 @@ const QuizApp: React.FC = () => {
         ) : (
           <div className="quiz-header p-6 md:p-16">
             <h2 className="my-4 text-center">
-              You answered{" "}
+              You got
               <b>
-                {" "}
-                {score} out of {quizData.length}{" "}
-              </b>{" "}
-              JS Arrays Questions Correctly.
+                {score.toFixed(2)} out of {100} scores.
+              </b>
             </h2>
             <h2 className="my-4 text-center">
               In {minutes} Minutes and {seconds} Seconds.
@@ -197,9 +169,7 @@ const QuizApp: React.FC = () => {
                 </AlertDialogTrigger>
                 <AlertDialogContent className="max-h-screen max-w-lg mx-auto p-10 overflow-y-auto">
                   <AlertDialogHeader>
-                    <AlertDialogTitle>
-                      ➡️ Review Your Answers: ❤️
-                    </AlertDialogTitle>
+                    <AlertDialogTitle>Review Your Answers:</AlertDialogTitle>
                     <AlertDialogDescription>
                       <ul>
                         {quizData.map((quiz, index) => (
@@ -208,14 +178,12 @@ const QuizApp: React.FC = () => {
                               <b>Question {index + 1}:</b> {quiz.question}
                             </p>
                             <p>
-                              <b>Your Answer:</b>{" "}
-                              {quiz[userAnswers[index] as keyof QuizData] ||
-                                "No Answer"}
+                              <b>Your Answer:</b>
+                              {quiz[userAnswers[index] as keyof QuizData] || "No Answer"}
                             </p>
                             {userAnswers[index] !== quiz.correct && (
                               <p className="text-red-500">
-                                <b>Correct Answer:</b>{" "}
-                                {quiz[quiz.correct as keyof QuizData]}
+                                <b>Correct Answer:</b> {quiz[quiz.correct as keyof QuizData]}
                               </p>
                             )}
                           </li>
@@ -225,7 +193,7 @@ const QuizApp: React.FC = () => {
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction>Thank you Sir ❤️</AlertDialogAction>
+                    <AlertDialogAction>Thank you</AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>
@@ -236,21 +204,22 @@ const QuizApp: React.FC = () => {
                 className="inline-flex h-8 md:h-10 items-center justify-center rounded-md bg-black px-6 md:px-8 text-lg font-bold text-white shadow transition-colors hover:bg-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                 onClick={handleConfetti}
               >
-                🎉 Congratulations 🎉
+                Congratulations
               </Button>
             </div>
           </div>
         )}
       </div>
-      <footer className="absolute bottom-0 w-full py-3 md:py-5 text-center">
+
+      <footer className="relative bottom-0 w-full py-3 md:py-5 text-center">
         <p className="text-black">
-          Built with ❤️ by{" "}
+          Built with 💚 by 
           <a
-            href="https://github.com/AsharibAli/"
+            href="https://www.linkedin.com/in/zohaib-baloch-78974b2b5/"
             target="_blank"
             className="font-bold text-black no-underline hover:underline"
           >
-            Asharib Ali
+            Zohaib
           </a>
         </p>
       </footer>
