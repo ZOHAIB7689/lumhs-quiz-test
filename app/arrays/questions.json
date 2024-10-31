@@ -1,4 +1,5 @@
 [
+[
   {
     "question": "Which of the following is the most basic type of lipid?",
     "a": "Compound lipid",
@@ -56,27 +57,597 @@
     "correct": "b"
   },
   {
-    "question": "Which type of fat is considered healthier for the heart and helps reduce cholesterol levels?",
-    "a": "Saturated fats",
-    "b": "Trans fats",
-    "c": "Unsaturated fats",
-    "d": "Hydrogenated fats",
+    "question": "What is the primary energy storage lipid in animals?",
+    "a": "Cholesterol",
+    "b": "Phospholipids",
+    "c": "Triglycerides",
+    "d": "Steroids",
     "correct": "c"
   },
   {
-    "question": "What is the main function of triglycerides in the human body?",
-    "a": "Cell membrane formation",
-    "b": "Energy storage",
-    "c": "Protein synthesis",
-    "d": "Hormone production",
+    "question": "Which of the following lipids has a role in hormone production?",
+    "a": "Cholesterol",
+    "b": "Triglycerides",
+    "c": "Phospholipids",
+    "d": "Waxes",
+    "correct": "a"
+  },
+  {
+    "question": "Which lipid is commonly known as 'good cholesterol'?",
+    "a": "LDL",
+    "b": "HDL",
+    "c": "VLDL",
+    "d": "IDL",
     "correct": "b"
   },
   {
-    "question": "Which lipid disorder is associated with a high level of low-density lipoprotein (LDL) in the blood?",
-    "a": "Atherosclerosis",
-    "b": "Hypertension",
-    "c": "Diabetes",
-    "d": "Osteoporosis",
+    "question": "Lipids that contain phosphate groups are known as?",
+    "a": "Glycolipids",
+    "b": "Steroids",
+    "c": "Phospholipids",
+    "d": "Triglycerides",
+    "correct": "c"
+  },
+  {
+    "question": "What type of bond connects fatty acids to glycerol in triglycerides?",
+    "a": "Ionic bond",
+    "b": "Hydrogen bond",
+    "c": "Ester bond",
+    "d": "Peptide bond",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid is a major component of cell membranes?",
+    "a": "Steroid",
+    "b": "Triglyceride",
+    "c": "Phospholipid",
+    "d": "Cholesterol",
+    "correct": "c"
+  },
+  {
+    "question": "Which of the following can act as emulsifiers in food?",
+    "a": "Steroids",
+    "b": "Glycolipids",
+    "c": "Phospholipids",
+    "d": "Triglycerides",
+    "correct": "c"
+  },
+  {
+    "question": "In which part of the body are lipids mainly digested?",
+    "a": "Stomach",
+    "b": "Mouth",
+    "c": "Small intestine",
+    "d": "Large intestine",
+    "correct": "c"
+  },
+  {
+    "question": "Which of the following lipids serves as an energy reserve?",
+    "a": "Steroids",
+    "b": "Phospholipids",
+    "c": "Triglycerides",
+    "d": "Cholesterol",
+    "correct": "c"
+  },
+  {
+    "question": "Which of the following lipids is typically solid at room temperature?",
+    "a": "Saturated fat",
+    "b": "Unsaturated fat",
+    "c": "Polyunsaturated fat",
+    "d": "Monounsaturated fat",
     "correct": "a"
+  },
+  {
+    "question": "The backbone of a phospholipid molecule is made up of?",
+    "a": "Triglycerides",
+    "b": "Steroids",
+    "c": "Glycerol",
+    "d": "Fatty acids",
+    "correct": "c"
+  },
+  {
+    "question": "Which of these is an example of a steroid hormone?",
+    "a": "Insulin",
+    "b": "Estrogen",
+    "c": "Glycogen",
+    "d": "Hemoglobin",
+    "correct": "b"
+  },
+  {
+    "question": "What is the characteristic structure of steroids?",
+    "a": "Three rings",
+    "b": "Four carbon rings",
+    "c": "Two rings",
+    "d": "Single ring",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipid category includes hormones like testosterone and estrogen?",
+    "a": "Triglycerides",
+    "b": "Phospholipids",
+    "c": "Steroids",
+    "d": "Glycolipids",
+    "correct": "c"
+  },
+  {
+    "question": "The primary building blocks of lipids are?",
+    "a": "Monosaccharides",
+    "b": "Amino acids",
+    "c": "Fatty acids",
+    "d": "Nucleotides",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid is important for absorbing fat-soluble vitamins?",
+    "a": "Phospholipids",
+    "b": "Cholesterol",
+    "c": "Triglycerides",
+    "d": "Glycolipids",
+    "correct": "c"
+  },
+  {
+    "question": "Which type of lipids are liquid at room temperature?",
+    "a": "Saturated fats",
+    "b": "Trans fats",
+    "c": "Unsaturated fats",
+    "d": "Glycolipids",
+    "correct": "c"
+  },
+  {
+    "question": "A major storage form of energy in animals is?",
+    "a": "Starch",
+    "b": "Cholesterol",
+    "c": "Glycogen",
+    "d": "Triglycerides",
+    "correct": "d"
+  },
+    {
+    "question": "Which of these molecules is not a type of lipid?",
+    "a": "Phospholipids",
+    "b": "Glycogen",
+    "c": "Cholesterol",
+    "d": "Triglycerides",
+    "correct": "b"
+  },
+  {
+    "question": "What is the main role of bile in lipid digestion?",
+    "a": "Breaking down lipids into monosaccharides",
+    "b": "Emulsifying lipids for better enzyme action",
+    "c": "Increasing lipid solubility",
+    "d": "Protecting lipids from oxidation",
+    "correct": "b"
+  },
+  {
+    "question": "Which enzyme primarily digests lipids in the small intestine?",
+    "a": "Amylase",
+    "b": "Lipase",
+    "c": "Pepsin",
+    "d": "Maltase",
+    "correct": "b"
+  },
+  {
+    "question": "Which of the following is NOT a function of lipids?",
+    "a": "Energy storage",
+    "b": "Hormone production",
+    "c": "Acting as enzymes",
+    "d": "Cell membrane structure",
+    "correct": "c"
+  },
+  {
+    "question": "Which of the following lipid types is linked to cardiovascular diseases when in excess?",
+    "a": "HDL cholesterol",
+    "b": "Unsaturated fats",
+    "c": "LDL cholesterol",
+    "d": "Polyunsaturated fats",
+    "correct": "c"
+  },
+  {
+    "question": "What is the building block of triglycerides?",
+    "a": "Amino acids",
+    "b": "Fatty acids and glycerol",
+    "c": "Monosaccharides",
+    "d": "Phosphates",
+    "correct": "b"
+  },
+  {
+    "question": "Lipids are primarily made up of which elements?",
+    "a": "Carbon, hydrogen, and oxygen",
+    "b": "Carbon, nitrogen, and oxygen",
+    "c": "Hydrogen, nitrogen, and phosphorus",
+    "d": "Carbon, hydrogen, and nitrogen",
+    "correct": "a"
+  },
+  {
+    "question": "What characteristic allows lipids to form cell membranes?",
+    "a": "Solubility in water",
+    "b": "Amphipathic properties",
+    "c": "Rigid structure",
+    "d": "Acidic pH",
+    "correct": "b"
+  },
+  {
+    "question": "What is the main function of HDL cholesterol in the body?",
+    "a": "Store energy",
+    "b": "Transport fat-soluble vitamins",
+    "c": "Transport cholesterol to the liver",
+    "d": "Build cell membranes",
+    "correct": "c"
+  },
+  {
+    "question": "Which fatty acids are considered essential because they cannot be synthesized by the body?",
+    "a": "Saturated fatty acids",
+    "b": "Monounsaturated fatty acids",
+    "c": "Polyunsaturated fatty acids",
+    "d": "Trans fatty acids",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid component forms the outer shell of a lipoprotein?",
+    "a": "Triglycerides",
+    "b": "Phospholipids",
+    "c": "Steroids",
+    "d": "Cholesterol esters",
+    "correct": "b"
+  },
+  {
+    "question": "What is a major health risk associated with trans fats?",
+    "a": "Increased HDL levels",
+    "b": "Improved heart function",
+    "c": "Lowered LDL levels",
+    "d": "Increased risk of heart disease",
+    "correct": "d"
+  },
+  {
+    "question": "Which molecule is responsible for transporting lipids through the bloodstream?",
+    "a": "Lipase",
+    "b": "Lipoproteins",
+    "c": "Insulin",
+    "d": "Bile",
+    "correct": "b"
+  },
+  {
+    "question": "Fatty acids are classified by the presence and number of what feature?",
+    "a": "Hydroxyl groups",
+    "b": "Double bonds",
+    "c": "Phosphate groups",
+    "d": "Nitrogen atoms",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipid molecule is typically found in the inner leaflet of cell membranes?",
+    "a": "Triglycerides",
+    "b": "Glycolipids",
+    "c": "Phosphatidylserine",
+    "d": "Cholesterol",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid structure is composed of a hydrophobic tail and a hydrophilic head?",
+    "a": "Phospholipids",
+    "b": "Cholesterol",
+    "c": "Glycolipids",
+    "d": "Triglycerides",
+    "correct": "a"
+  },
+  {
+    "question": "What type of bond links fatty acids to glycerol in triglycerides?",
+    "a": "Ester bond",
+    "b": "Peptide bond",
+    "c": "Glycosidic bond",
+    "d": "Hydrogen bond",
+    "correct": "a"
+  },
+  {
+    "question": "Which lipid is primarily responsible for waterproofing in plants?",
+    "a": "Cholesterol",
+    "b": "Waxes",
+    "c": "Phospholipids",
+    "d": "Triglycerides",
+    "correct": "b"
+  },
+  {
+    "question": "Omega-3 fatty acids are primarily found in which food source?",
+    "a": "Dairy",
+    "b": "Red meat",
+    "c": "Fish",
+    "d": "Fruits",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid helps maintain membrane fluidity in animal cells?",
+    "a": "Cholesterol",
+    "b": "Phosphatidylserine",
+    "c": "Triglycerides",
+    "d": "Sphingolipids",
+    "correct": "a"
+  },
+  {
+    "question": "Which of the following is a ketone body derived from lipid metabolism?",
+    "a": "Acetoacetate",
+    "b": "Lactic acid",
+    "c": "Pyruvate",
+    "d": "Malate",
+    "correct": "a"
+  },
+  {
+    "question": "Lipids provide how many kilocalories per gram?",
+    "a": "4",
+    "b": "7",
+    "c": "9",
+    "d": "11",
+    "correct": "c"
+  },
+  {
+    "question": "Which organ primarily regulates lipid levels in the blood?",
+    "a": "Kidney",
+    "b": "Liver",
+    "c": "Pancreas",
+    "d": "Small intestine",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipid is the primary component of myelin sheaths in the nervous system?",
+    "a": "Triglycerides",
+    "b": "Glycolipids",
+    "c": "Phospholipids",
+    "d": "Sphingolipids",
+    "correct": "d"
+  },
+  {
+    "question": "What is the primary storage form of fat in animals?",
+    "a": "Steroids",
+    "b": "Triglycerides",
+    "c": "Cholesterol",
+    "d": "Phospholipids",
+    "correct": "b"
+  },
+  
+  {
+    "question": "Which of the following lipid types provides energy when metabolized?",
+    "a": "Steroids",
+    "b": "Triglycerides",
+    "c": "Phospholipids",
+    "d": "Waxes",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipoprotein is often referred to as 'bad cholesterol'?",
+    "a": "HDL",
+    "b": "LDL",
+    "c": "VLDL",
+    "d": "IDL",
+    "correct": "b"
+  },
+  {
+    "question": "Which molecule aids in emulsifying fats for digestion in the small intestine?",
+    "a": "Bile",
+    "b": "Pepsin",
+    "c": "Amylase",
+    "d": "Chyme",
+    "correct": "a"
+  },
+  {
+    "question": "Which of these fatty acids has a single double bond?",
+    "a": "Polyunsaturated",
+    "b": "Monounsaturated",
+    "c": "Saturated",
+    "d": "Trans",
+    "correct": "b"
+  },
+  {
+    "question": "What type of lipid structure forms cell membranes?",
+    "a": "Triglycerides",
+    "b": "Cholesterol",
+    "c": "Phospholipids",
+    "d": "Steroids",
+    "correct": "c"
+  },
+  {
+    "question": "What is the main function of bile salts in lipid digestion?",
+    "a": "Breaking down proteins",
+    "b": "Absorbing amino acids",
+    "c": "Emulsifying lipids",
+    "d": "Producing triglycerides",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipid structure helps protect skin and hair?",
+    "a": "Phospholipids",
+    "b": "Waxes",
+    "c": "Steroids",
+    "d": "Triglycerides",
+    "correct": "b"
+  },
+  {
+    "question": "Which essential fatty acid is found in fish oil?",
+    "a": "Omega-3",
+    "b": "Omega-6",
+    "c": "Omega-9",
+    "d": "Linoleic acid",
+    "correct": "a"
+  },
+  {
+    "question": "Which organ stores and releases bile to aid in fat digestion?",
+    "a": "Liver",
+    "b": "Stomach",
+    "c": "Gallbladder",
+    "d": "Pancreas",
+    "correct": "c"
+  },
+  {
+    "question": "Which fatty acid is associated with increased risk of heart disease?",
+    "a": "Saturated",
+    "b": "Monounsaturated",
+    "c": "Polyunsaturated",
+    "d": "Omega-3",
+    "correct": "a"
+  },
+  {
+    "question": "Which enzyme breaks down fats in the digestive system?",
+    "a": "Pepsin",
+    "b": "Lipase",
+    "c": "Amylase",
+    "d": "Protease",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipid serves as a precursor for hormone production?",
+    "a": "Cholesterol",
+    "b": "Triglycerides",
+    "c": "Phospholipids",
+    "d": "Sphingolipids",
+    "correct": "a"
+  },
+  {
+    "question": "Which fatty acid has no double bonds?",
+    "a": "Monounsaturated",
+    "b": "Polyunsaturated",
+    "c": "Saturated",
+    "d": "Unsaturated",
+    "correct": "c"
+  },
+  {
+    "question": "What is the primary function of lipoproteins in the blood?",
+    "a": "To transport lipids",
+    "b": "To store energy",
+    "c": "To act as enzymes",
+    "d": "To synthesize proteins",
+    "correct": "a"
+  },
+  {
+    "question": "What are ketone bodies formed from?",
+    "a": "Carbohydrates",
+    "b": "Lipids",
+    "c": "Proteins",
+    "d": "Nucleic acids",
+    "correct": "b"
+  },
+  {
+    "question": "Which type of lipid is most commonly associated with body fat?",
+    "a": "Phospholipids",
+    "b": "Waxes",
+    "c": "Triglycerides",
+    "d": "Steroids",
+    "correct": "c"
+  },
+  {
+    "question": "Which fatty acid type is liquid at room temperature?",
+    "a": "Saturated",
+    "b": "Monounsaturated",
+    "c": "Polyunsaturated",
+    "d": "Both b and c",
+    "correct": "d"
+  },
+  {
+    "question": "Which lipid is a component of cell membranes and also serves as an energy source?",
+    "a": "Cholesterol",
+    "b": "Phospholipids",
+    "c": "Triglycerides",
+    "d": "Sphingolipids",
+    "correct": "b"
+  },
+  {
+    "question": "Which fatty acid is not produced by the body and must be consumed?",
+    "a": "Oleic acid",
+    "b": "Palmitic acid",
+    "c": "Linoleic acid",
+    "d": "Stearic acid",
+    "correct": "c"
+  },
+  {
+    "question": "Which lipoprotein transports cholesterol to tissues?",
+    "a": "HDL",
+    "b": "LDL",
+    "c": "IDL",
+    "d": "VLDL",
+    "correct": "b"
+  },
+  {
+    "question": "What type of lipid is commonly found in animal fats?",
+    "a": "Polyunsaturated fats",
+    "b": "Monounsaturated fats",
+    "c": "Saturated fats",
+    "d": "Trans fats",
+    "correct": "c"
+  },
+  {
+    "question": "Which fatty acids are considered good for cardiovascular health?",
+    "a": "Saturated fats",
+    "b": "Trans fats",
+    "c": "Monounsaturated fats",
+    "d": "Omega-6 fatty acids",
+    "correct": "c"
+  },
+  {
+    "question": "What are eicosanoids derived from?",
+    "a": "Sphingolipids",
+    "b": "Phospholipids",
+    "c": "Cholesterol",
+    "d": "Arachidonic acid",
+    "correct": "d"
+  },
+  {
+    "question": "Where are bile salts synthesized?",
+    "a": "Liver",
+    "b": "Gallbladder",
+    "c": "Pancreas",
+    "d": "Stomach",
+    "correct": "a"
+  },
+  {
+    "question": "Which fatty acid type is the main component of olive oil?",
+    "a": "Saturated",
+    "b": "Monounsaturated",
+    "c": "Polyunsaturated",
+    "d": "Trans",
+    "correct": "b"
+  },
+  {
+    "question": "Which lipid molecule forms the hydrophobic interior of cell membranes?",
+    "a": "Phospholipids",
+    "b": "Cholesterol",
+    "c": "Waxes",
+    "d": "Steroids",
+    "correct": "a"
+  },
+  {
+    "question": "Which fatty acid is primarily found in coconut oil?",
+    "a": "Oleic acid",
+    "b": "Lauric acid",
+    "c": "Linoleic acid",
+    "d": "Stearic acid",
+    "correct": "b"
+  },
+  {
+    "question": "Which type of lipid can serve as signaling molecules?",
+    "a": "Triglycerides",
+    "b": "Phospholipids",
+    "c": "Steroids",
+    "d": "Both b and c",
+    "correct": "d"
+  },
+  {
+    "question": "What type of fatty acid is often found in processed foods and is associated with negative health effects?",
+    "a": "Saturated",
+    "b": "Trans",
+    "c": "Monounsaturated",
+    "d": "Polyunsaturated",
+    "correct": "b"
+  },
+  {
+    "question": "What is the primary storage form of fatty acids in the body?",
+    "a": "Phospholipids",
+    "b": "Cholesterol",
+    "c": "Triglycerides",
+    "d": "Waxes",
+    "correct": "c"
+  },
+  {
+    "question": "What is the key characteristic of unsaturated fatty acids?",
+    "a": "They have no double bonds.",
+    "b": "They are solid at room temperature.",
+    "c": "They contain one or more double bonds.",
+    "d": "They are found only in animal products.",
+    "correct": "c"
   }
+  ]
 ]

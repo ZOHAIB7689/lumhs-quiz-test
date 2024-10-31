@@ -1,4 +1,3 @@
-// src/components/QuizApp.tsx
 "use client";
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -27,7 +26,8 @@ type QuizData = {
   correct: string;
 };
 
-const quizData: QuizData[] = arrayQuestions;
+// Flatten the array of arrays to a single array of QuizData objects and shuffle them
+const quizData: QuizData[] = arrayQuestions.flat().sort(() => Math.random() - 0.5).slice(0, 10); // Select 10 random questions
 
 const QuizApp: React.FC = () => {
   const [currentQuiz, setCurrentQuiz] = useState(0);
